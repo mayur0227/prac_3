@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+.nav{
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 80PX;
+    align-items: center;
+    padding-left: 10px;
+    
+}
+.nav1{
+   
+}

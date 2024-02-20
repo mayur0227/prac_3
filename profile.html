@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+
+    <div >
+        <h2>Profile</h2>
+        <button onClick="logout()">Log Out</button><br>
+        <hr>
+        <H3>welcome</H3>
+        <h4>Name:
+            <script>
+                document.write(localStorage.getItem('name'));
+            </script>
+
+        </h4>
+        <h4>Your Email
+            <script>
+                document.write(localStorage.getItem('email'))
+            </script>
+        </h4>
+    </div>
+    
+</body>
+
+<script>
+    function logout(){
+        localStorage.removeItem("name");
+        localStorage.removeItem("email");
+        window.location.href="logIn.html"
+    }
+</script>
+</html>
